@@ -1,0 +1,232 @@
+.main-nav li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.main-nav li a.active,
+.main-nav li a.active:hover,
+.main-nav li a.active:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        height: 100%;
+        width: calc(25% - 20px);
+    }
+    .main-nav .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+    .main-nav .navbar-header {
+        float: none;
+    }
+    .main-nav .navbar-collapse {
+        border-top: 1px solid #444;
+        padding: 0px;
+    }
+    .main-nav .navbar ul {
+        float: none;
+    }
+    .main-nav .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+    .main-nav .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .main-nav .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+
+/*Maps*/
+
+.map {
+    height: 500px;
+    padding: 10px;
+}
+
+.map > div {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+    .map > div > div {
+        position: absolute;
+        left: 0;
+        top: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+
+.map-marker-mine,
+.map-marker-others {
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.map-marker-mine {
+    border: 2px solid white;
+    background-color: chartreuse;
+}
+
+.map-marker-others{
+    border: 2px solid white;
+    background-color: crimson;
+}
+
+
+
+/* Form */
+
+form header {
+    margin: 0 0 20px 0;
+}
+
+form header div {
+    font-size: 90%;
+    color: #999;
+}
+
+form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+}
+
+form > div > fieldset > div > div {
+    margin: 0 0 5px 0;
+}
+
+form > div > label {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+}
+
+form > div > div,
+form > div > fieldset > div {
+    width: 75%;
+    float: right;
+}
+
+form > div > fieldset label {
+    font-size: 90%;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+textarea {
+    width: 50%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text]:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+}
+
+@media (max-width: 767px) {
+    form > div {
+        margin: 0 0 15px 0;
+    }
+
+        form > div > label {
+            width: 100%;
+            float: none;
+            margin: 0 0 5px 0;
+        }
+
+        form > div > div,
+        form > div > fieldset > div {
+            width: 100%;
+            float: none;
+        }
+
+    input[type=text],
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    form > div > label {
+        text-align: right;
+    }
+}
+
+/*Search*/
+
+.search-result {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+}
+
+.search-result-name {
+    font-weight: bold;
+}
+
+.search-input {
+    padding: 10px 10px;
+    height: 52px;
+    position: relative;
+}
+
+.search-input > input {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+   
