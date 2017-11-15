@@ -159,8 +159,6 @@ export class LandmarkRemark extends React.Component<RouteComponentProps<{}>, IFe
 
     private static renderMap(myCurrentLocation: number[], landmarkRemarks: LanmarkRemark[]) {
 
-        //split up the markers into 2 sets the users and all others
-
         var myLandmarkRemarks = landmarkRemarks.filter(function (myLandmarkRemark) {
             return myLandmarkRemark.username == MY_USERNAME;
         });
