@@ -8,7 +8,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
             <h1>Landmark Remark</h1>
             <h2>Background</h2>
             <p>
-                I took this opportunity to get familiar with React SPAs, as I have not worked with this library before.
+                <ul>
+                    <li>The font-end technology used was React.  This was an opportunity to get familiar with React SPAs, as I have not worked with this library before.</li>
+                    <li>The backend technology used was .NET Core 2. Took advantage of .NET core JavaScriptServices which facilitate building client-side resources using Webpack</li>
+                    <li>The database is SQL Server (embedded into application)</li>
+                </ul>
+
+                
+                The code is available at: <a href="https://github.com/sammy-gee/landmarkremark/" target="_blank"> https://github.com/sammy-gee/landmarkremark/ </a>
+
+                <br />
+                <br />
+
+                Open the solution file with Visual Studio 2017 (with .NET Core 2 and Node.js installed) and build to restore the packages both NuGet and NPM 
+                After successful build, the applicaiton should be runnable through Visual Studio
                 <br />
                 <br />
 
@@ -55,6 +68,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
                     <li>Due to time constraints validation was not implement. For example, on the form</li>
                     <li>Core can be further re-factored. For example, the Message Form in LandmarkRemark.tsx can be put into its own component and and putting the google api key into config.</li>
                     <li>No unit tests due to time constraints</li>
+                    <li>More proper multi-device tests are needed to ensure compatability</li>
                     <li>To save time 3rd party ReactJS libraries were utilised. e.g. the maps and filtering. These need to be analysed to see if they would be viable in a production environment. E.g. Limitations on functionality, support, ease of customisation, performance, etc</li>
                 </ul>
             </p>
