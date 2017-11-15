@@ -15,7 +15,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
                 </ul>
 
                 
-                The code is available at: <a href="https://github.com/sammy-gee/landmarkremark/" target="_blank"> https://github.com/sammy-gee/landmarkremark/ </a>
+                The code is available at: <a href="https://github.com/sammy-gee/landmarkremark/" target="_blank"> https://github.com/sammy-gee/landmarkremark/ </a> (in the develop repo)
 
                 <br />
                 <br />
