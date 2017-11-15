@@ -80,7 +80,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
                     <br />
                     <br />
 
-                    Still quite a bit to learn about React bu it was a good start tot he technology. 
+                    Still quite a bit to learn about React but it was a good start tot he technology. 
                 </p>
         </div>;
     }
