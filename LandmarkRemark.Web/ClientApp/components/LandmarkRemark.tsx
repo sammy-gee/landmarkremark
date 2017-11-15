@@ -122,7 +122,7 @@ export class LandmarkRemark extends React.Component<RouteComponentProps<{}>, IFe
                         </div>
                         <div>
                             <label id="note">
-                                Message for my current location
+                                Note for my current location
 			               </label>
                             <div>
                                 <textarea name="myCurrentNote" value={this.state.myCurrentNote} onChange={this.handleInputChange} maxLength={100} />
