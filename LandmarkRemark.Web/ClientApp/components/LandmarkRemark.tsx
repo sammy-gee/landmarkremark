@@ -7,6 +7,7 @@ import { LandmarkRemarkList } from './LandmarkRemarkList';
 //This is a temp workaround for an authenticated logged in user - to be replaced by real authentication mechanism
 const MY_USERNAME = "sam";
 
+//Sydney as default location
 var MY_CURRENT_LOCATION_DEFAULT = [-33.8737, 151.1957];
 
 
@@ -32,7 +33,8 @@ export class LandmarkRemark extends React.Component<RouteComponentProps<{}>, IFe
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        
+
+        //obtain location from browser otherwise if rejected/error set to default
         var component = this;
         navigator.geolocation.getCurrentPosition(
             function (position) {
@@ -46,6 +48,7 @@ export class LandmarkRemark extends React.Component<RouteComponentProps<{}>, IFe
         this.loadMapData();
     }
 
+    //Funciton to obtain all the landmarks
     loadMapData() {
         
         fetch('api/landmarkremarks/all')
@@ -156,6 +159,7 @@ export class LandmarkRemark extends React.Component<RouteComponentProps<{}>, IFe
 
     private static renderMap(myCurrentLocation: number[], landmarkRemarks: LanmarkRemark[]) {
 
+        //split up the markers into 2 sets the users and all others
 
         var myLandmarkRemarks = landmarkRemarks.filter(function (myLandmarkRemark) {
             return myLandmarkRemark.username == MY_USERNAME;
